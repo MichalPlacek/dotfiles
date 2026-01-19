@@ -1,0 +1,3 @@
+Stack:
+- kitty
+- LazyGit
