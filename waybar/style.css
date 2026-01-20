@@ -57,10 +57,11 @@ window#waybar {
 #network,
 #pulseaudio,
 #temperature,
+#backlight,
 #battery,
 #tray {
     padding: 4px 10px;
-    margin: 2px 3px;
+    margin: 2px 1px;
     background: @bg1;
     border-radius: 4px;
 }
@@ -72,6 +73,7 @@ window#waybar {
 #network:hover,
 #pulseaudio:hover,
 #temperature:hover,
+#backlight:hover,
 #battery:hover,
 #tray:hover {
     background: @bg2;
@@ -103,7 +105,7 @@ window#waybar {
 
 #idle_inhibitor {
     padding: 4px 8px;
-    margin: 2px 3px;
+    margin: 2px 1px;
     background: @bg1;
     border-radius: 4px;
     min-width: 15px;
@@ -111,7 +113,7 @@ window#waybar {
 
 #custom-power {
     padding: 4px 10px;
-    margin: 2px 3px;
+    margin: 2px 1px;
     background: @bg1;
     border-radius: 4px;
     color: @fg1;
