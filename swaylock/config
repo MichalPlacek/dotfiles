@@ -1,0 +1,57 @@
+# Gruvbox Dark theme for swaylock
+# Minimal version with wallpaper support
+
+# Wallpaper (ustaw ścieżkę do swojego obrazka)
+# Odkomentuj jedną z opcji poniżej:
+
+# Opcja 1: Użyj tego samego wallpapera co w Sway
+image=~/Obrazy/wallpaper.png
+
+# Opcja 2: Dedykowany wallpaper dla lock screen
+# image=~/Obrazy/lockscreen.png
+
+# Opcja 3: Blur wallpaper (wymaga swaylock-effects)
+# image=~/Obrazy/wallpaper.png
+# effect-blur=7x5
+
+# Scaling mode: stretch, fill, fit, center, tile
+scaling=fill
+
+# Fallback color (jeśli obrazek się nie załaduje)
+color=282828
+
+# Ring (pierścień przy wprowadzaniu hasła)
+inside-color=3c3836
+ring-color=504945
+line-color=282828
+text-color=ebdbb2
+
+# Podczas wpisywania hasła
+inside-ver-color=458588
+ring-ver-color=83a598
+text-ver-color=ebdbb2
+
+# Błędne hasło
+inside-wrong-color=cc241d
+ring-wrong-color=fb4934
+text-wrong-color=ebdbb2
+
+# Po wyczyszczeniu pola
+inside-clear-color=689d6a
+ring-clear-color=8ec07c
+text-clear-color=ebdbb2
+
+# Separator line
+separator-color=00000000
+
+# Key highlight (pokazuje że klawisz został wciśnięty)
+key-hl-color=d79921
+bs-hl-color=cc241d
+
+# Layout
+indicator-radius=100
+indicator-thickness=10
+
+# Inne opcje
+show-failed-attempts
+ignore-empty-password

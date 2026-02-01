@@ -1,0 +1,189 @@
+/**
+ * Gruvbox Dark theme for Rofi
+ * Matching Kitty/Waybar/Sway setup
+ */
+
+* {
+    /* Gruvbox Dark colors */
+    bg0:     #282828;
+    bg1:     #3c3836;
+    bg2:     #504945;
+    bg3:     #665c54;
+    
+    fg0:     #fbf1c7;
+    fg1:     #ebdbb2;
+    fg2:     #d5c4a1;
+    fg3:     #bdae93;
+    fg4:     #a89984;
+    
+    red:     #cc241d;
+    green:   #98971a;
+    yellow:  #d79921;
+    blue:    #458588;
+    purple:  #b16286;
+    aqua:    #689d6a;
+    orange:  #d65d0e;
+    
+    /* Theme variables */
+    background-color: transparent;
+    text-color:       @fg1;
+    accent:           @yellow;
+}
+
+window {
+    background-color: @bg0;
+    border:           2px;
+    border-color:     @bg2;
+    border-radius:    8px;
+    padding:          0;
+    width:            600px;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, message, listview ];
+    spacing:          0;
+    padding:          12px;
+}
+
+inputbar {
+    background-color: @bg1;
+    border-radius:    4px;
+    padding:          12px;
+    spacing:          8px;
+    children:         [ prompt, entry ];
+    margin:           0 0 12px 0;
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @accent;
+    font:             "JetBrainsMono Nerd Font Bold 12";
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @fg1;
+    placeholder:      "Search...";
+    placeholder-color: @fg4;
+    cursor:           text;
+}
+
+message {
+    background-color: @bg1;
+    border-radius:    4px;
+    padding:          8px;
+    margin:           0 0 8px 0;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @fg1;
+}
+
+listview {
+    background-color: transparent;
+    columns:          1;
+    lines:            8;
+    spacing:          4px;
+    cycle:            true;
+    dynamic:          true;
+    scrollbar:        false;
+}
+
+element {
+    background-color: transparent;
+    text-color:       @fg1;
+    border-radius:    4px;
+    padding:          8px;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             1.5em;
+    margin:           0 8px 0 0;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @fg1;
+}
+
+element normal.urgent {
+    background-color: @red;
+    text-color:       @bg0;
+}
+
+element normal.active {
+    background-color: @bg1;
+    text-color:       @blue;
+}
+
+element selected.normal {
+    background-color: @bg2;
+    text-color:       @accent;
+    border:           0 0 0 3px;
+    border-color:     @accent;
+}
+
+element selected.urgent {
+    background-color: @red;
+    text-color:       @bg0;
+}
+
+element selected.active {
+    background-color: @bg2;
+    text-color:       @blue;
+    border:           0 0 0 3px;
+    border-color:     @blue;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @fg1;
+}
+
+element alternate.urgent {
+    background-color: @red;
+    text-color:       @bg0;
+}
+
+element alternate.active {
+    background-color: @bg1;
+    text-color:       @blue;
+}
+
+/* Scrollbar (if enabled) */
+scrollbar {
+    width:            4px;
+    border:           0;
+    handle-color:     @bg2;
+    handle-width:     4px;
+    padding:          0;
+    margin:           0 0 0 4px;
+}
+
+/* Mode switcher */
+mode-switcher {
+    spacing:          0;
+    background-color: @bg1;
+    border-radius:    4px;
+    margin:           8px 0 0 0;
+}
+
+button {
+    background-color: transparent;
+    text-color:       @fg1;
+    padding:          8px;
+}
+
+button selected {
+    background-color: @bg2;
+    text-color:       @accent;
+}
